@@ -1,0 +1,10 @@
+
+1
+  "homepage": "https://sohaib-19.github.io/POI",
+
+
+
+
+2
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
