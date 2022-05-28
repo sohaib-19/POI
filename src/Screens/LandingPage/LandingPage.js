@@ -10,7 +10,7 @@ import Grid from '@material-ui/core/Grid';
 import Categories from './Categories';
 
 import Map from "../../Assets/map.webp"
-import SearchIcon from '@material-ui/icons/Search';
+import LocationSearchingIcon from '@material-ui/icons/LocationSearching';
 import LocalCafeIcon from '@material-ui/icons/LocalCafe';
 
 const useStyles = makeStyles((theme) => ({
@@ -32,7 +32,8 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     width: "100%",
     marginBottom: 20,
-    backgroundColor: "#101010",
+    backgroundColor: "#222222",
+    boxShadow: '0 -5px 5px -5px #333',
     borderRadius: "50px",
     [theme.breakpoints.down("md")]: {
       width: "100vw",
@@ -40,12 +41,11 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   input: {
-    marginLeft: theme.spacing(2),
     flex: 1,
     color: "white",
   },
   iconButton: {
-    padding: 10,
+    // padding: 10,
     color: '#fff !important'
   },
 }));
@@ -64,7 +64,7 @@ export default function LandingPage() {
               <IconButton className={classes.iconButton}
             //    onClick={restaurantSearch} 
                >
-                <img alt="" src={LocalCafeIcon} />
+                <LocationSearchingIcon/>
               </IconButton>
               <InputBase
                 // value={search}

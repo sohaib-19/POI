@@ -7,7 +7,7 @@ import MobileNav from "../Components/MobileNav";
 import AboutUs from "../Screens/AboutUs/AboutUs";
 import LandingPage from "../Screens/LandingPage/LandingPage"
 import Routes from "../Routes/Routes";
-// import Footer from "../Components/Footer";
+import Footer from "../Components/Footer";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -34,11 +34,9 @@ function Layout(props) {
               <MobileNav {...props} />
             )}
             <div style={{marginBottom: "100px"}}></div>
-            {/* <LandingPage/> */}
-            {/* <AboutUs/> */}
 
             <Routes />
-            {/* <Footer /> */}
+            <Footer />
           </>
     </Fragment>
   );
