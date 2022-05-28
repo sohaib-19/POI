@@ -86,12 +86,12 @@ const Navbar = (props) => {
               style={{ height: 0, cursor: "pointer", fontWeight: "bold" }} onClick={() => history.push("/")}>POI</Typography>
               <div className="navigations">
                 <ul>
-                  <li className= {navList} onClick={() => history.push("/aboutus")}>
+                  <li className= {navList} onClick={() => history.push("/")}>
                     <Typography className="navLinks underline">
                         Home
                     </Typography>
                   </li>
-                  <li className= {navList} onClick={() => history.push("/")}>
+                  <li className= {navList} onClick={() => history.push("/aboutus")}>
                     <Typography className="navLinks underline">
                         Destinations
                     </Typography>

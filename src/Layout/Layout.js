@@ -1,14 +1,12 @@
 import React, { Fragment, useState } from "react";
 import { makeStyles } from '@material-ui/core/styles';
-import Paper from '@material-ui/core/Paper';
-import Grid from '@material-ui/core/Grid';
-// import { withRouter } from "react-router-dom";
+import { withRouter } from "react-router-dom";
 import { useTheme, useMediaQuery } from "@material-ui/core";
 import Navbar from "../Components/Navbar";
 import MobileNav from "../Components/MobileNav";
 import AboutUs from "../Screens/AboutUs/AboutUs";
 import LandingPage from "../Screens/LandingPage/LandingPage"
-// import Routes from "../Routes/Routes";
+import Routes from "../Routes/Routes";
 // import Footer from "../Components/Footer";
 
 const useStyles = makeStyles((theme) => ({
@@ -36,15 +34,15 @@ function Layout(props) {
               <MobileNav {...props} />
             )}
             <div style={{marginBottom: "100px"}}></div>
-            <LandingPage/>
+            {/* <LandingPage/> */}
             {/* <AboutUs/> */}
 
-            {/* <Routes />
-            <Footer /> */}
+            <Routes />
+            {/* <Footer /> */}
           </>
     </Fragment>
   );
 }
 
 
-export default Layout;
+export default withRouter(Layout);

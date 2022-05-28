@@ -1,5 +1,5 @@
 import React from "react";
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, withRouter } from "react-router-dom";
 
 import LandingPage from "../Screens/LandingPage/LandingPage";
 import AboutUs from "../Screens/AboutUs/AboutUs"
@@ -14,16 +14,16 @@ const routesArr = [
         path: "/aboutus",
         component: AboutUs,
     },
-    {
-        exact: true,
-        path: "/home",
-        component: LandingPage,
-    },
-    {
-        exact: true,
-        path: "/destination",
-        component: LandingPage,
-    },
+    // {
+    //     exact: true,
+    //     path: "/home",
+    //     component: LandingPage,
+    // },
+    // {
+    //     exact: true,
+    //     path: "/destination",
+    //     component: LandingPage,
+    // },
 ];
 
 const routes = () => {
@@ -43,4 +43,5 @@ const routes = () => {
     );
 };
 
-export default routes;
+export default withRouter(routes);
+
