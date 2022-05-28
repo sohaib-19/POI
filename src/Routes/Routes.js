@@ -2,7 +2,8 @@ import React from "react";
 import { Switch, Route, withRouter } from "react-router-dom";
 
 import LandingPage from "../Screens/LandingPage/LandingPage";
-import AboutUs from "../Screens/AboutUs/AboutUs"
+import AboutUs from "../Screens/AboutUs/AboutUs";
+import Login from "../Screens/Login/Login";
 const routesArr = [
     {
         exact: true,
@@ -14,16 +15,12 @@ const routesArr = [
         path: "/aboutus",
         component: AboutUs,
     },
-    // {
-    //     exact: true,
-    //     path: "/home",
-    //     component: LandingPage,
-    // },
-    // {
-    //     exact: true,
-    //     path: "/destination",
-    //     component: LandingPage,
-    // },
+    {
+        exact: true,
+        path: "/login",
+        component: Login,
+    },
+
 ];
 
 const routes = () => {
