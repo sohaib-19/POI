@@ -133,11 +133,6 @@ const Footer = () => {
                             {/* <img alt='pic' src={logo} className={logo} /> */}
                             <h3 style={{ color: "#fff" }}>Account</h3>
                             <List>
-                            <Link style={{ textDecoration: 'none' }} to="cart">
-                                <ListItem disablePadding>
-                                    <ListItemText className={text}>Cart</ListItemText>
-                                </ListItem>
-                                </Link>
                                 <Link style={{ textDecoration: 'none' }} to="login">
                                 <ListItem disablePadding>
                                     <ListItemText className={text}>Login</ListItemText>
